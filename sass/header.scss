@@ -1,0 +1,146 @@
+.col-xs-12 {
+  color: #fff;
+  margin: 0;
+  padding: 0; }
+
+.navbar li a {
+  margin: 0;
+  font-size: 12px; }
+
+.container, .row {
+  max-width: 868px;
+  padding: 0;
+  margin: 0 auto; }
+
+.webnam_header_overflow_hack{
+  z-index: 10; 
+  width:100%;
+  height: auto;
+  position: absolute;
+  max-width: 868px;
+  margin: 0;
+  padding:0;
+  background-color: #fff;
+}
+.webnam_header {
+  margin: 0 0 0 0;
+  padding:0;
+ }
+
+
+.webnam_nav {
+  margin: 0;
+  background-color: white;
+  border: 0; }
+
+.webnam_nav_collapse {
+  margin: 40px 0 0 0;
+  background-color: transparent;
+  border: 0; 
+}
+
+/*.webnam_nav_button{
+  color:green;
+  margin: 0!important;
+  padding: 6px !important;
+}*/
+.navbar li a {
+  padding: 4px;
+  color: $item_color !important; 
+}
+.navbar li a:hover {
+  color: #666 !important; 
+}
+
+
+.webnam_logo {
+  height: 4px;
+  margin: 0;
+  padding: 0; }
+
+.webnam_logo img {
+  position: absolute;
+  z-index: 10;
+  width: 197px;
+  height: 50px; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (phones, 480px and up) bc bootstraps breakpoints are a joke */
+
+@media (max-width: 480px) {
+  .main_image_area{display: none;}
+  .container{width:96% !important; margin-top:2px;}
+  .homepage_icon{width:100%}
+  .left {text-align: center; }
+  .mid {margin: 0 auto; text-align: center }
+  .right {text-align: center; }
+  .homepage_icon p{font-size: 12px!important;}   
+
+}
+
+
+@media (max-width: 767px) {
+  .container{width:96% !important; margin-top:2px;}
+  .homepage_icon p{font-size: 11px;}  
+  .webnam_header_overflow_hack{
+    margin:0;
+    padding:0;
+    max-width: 96%;
+    overflow: hidden;
+   }
+
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .homepage_icon p{font-size: 12px;}
+  .webnam_nav_shift {
+    margin: 10px 0 0 32px; }
+
+  .navbar li a {
+    padding: 4px 10px; }
+
+  .webnam_nav_collapse {
+    margin: 0 0 0 0; }
+
+  .webnam_header {
+    margin: 10px 0 2px 0; } 
+
+  .webnam_header_overflow_hack{
+    margin:0;
+    padding:0;
+    max-width: 750px;
+    overflow: hidden;
+  } 
+ 
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .webnam_nav_shift {
+    margin: 12px 0 0 32px; }
+
+  .navbar li a {
+    padding: 4px 20px; }
+
+  .webnam_logo img {
+    width: 244px;
+    height: 62px; }
+
+  .webnam_header {
+    margin: 10px 0 20px 0; } 
+  .webnam_header_overflow_hack{
+    margin:0;
+    padding:0;
+    max-width: 868px;
+    overflow: hidden;
+   
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+
+

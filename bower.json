@@ -1,0 +1,20 @@
+{
+  "name": "webnamehere2.0",
+  "version": "0.1.0",
+  "homepage": "https://github.com/NickG77/webnamehere2.0",
+  "description": "The new and improved site",
+  "authors": [
+    "Nick"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

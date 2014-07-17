@@ -1,217 +1,32 @@
 @import "compass";
 @import "bootstrap";
-$item_color:#999999;
-$borderRadius:6px;
-$belowNavWideAdjust:80px;
-$belowNavMidAdjust:70px;
-$belowNavAdjust:54px;
+@import "variables";
+@import "homepage";
+@import "header";
 
 
-@mixin belowNav($marginAdjust){
-  margin-top:$marginAdjust !important;
-}
 
 
-.col-xs-12 {
-  color: #fff;
-  margin: 0;
-  padding: 0; }
 
-.navbar li a {
-  margin: 0;
-  font-size: 12px; }
-
-.container, .row {
-  max-width: 868px;
-  padding: 0;
-  margin: 0 auto; }
-
-.webnam_header_overflow_hack{
-  z-index: 10; 
-  width:100%;
-  height: auto;
-  position: absolute;
-  max-width: 868px;
-  margin: 0;
-  padding:0;
-  background-color: #fff;
-}
-.webnam_header {
-  margin: 0 0 0 0;
-  padding:0;
- }
-
-.main_image_area img {
-	  @include border-radius($borderRadius);
-  z-index: 0;
- /*future proofing */
-  width: 100%;
-  margin: 0 0 0 0;
-  max-width: 868px; }
-
-.webnam_nav {
-  margin: 0;
-  background-color: white;
-  border: 0; }
-
-.webnam_nav_collapse {
-  margin: 40px 0 0 0;
-  background-color: transparent;
-  border: 0; 
-}
-
-/*.webnam_nav_button{
-	color:green;
-	margin: 0!important;
-	padding: 6px !important;
-}*/
-.navbar li a {
-  padding: 4px;
-  color: $item_color !important; 
-}
-.navbar li a:hover {
-  color: #666 !important; 
-}
-
-
-.webnam_logo {
-  height: 4px;
-  margin: 0;
-  padding: 0; }
-
-.webnam_logo img {
-  position: absolute;
-  z-index: 10;
-  width: 197px;
-  height: 50px; }
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-.homepage_icons_section{
-	@include make-row(); 
-	margin:0;
-	padding:0;
-}
-
-
-.homepage_icon {
-  padding: 10px 0 0 0;
-  border: 0 solid #e1e1e1;
-  width:33.3%;
-  float:left;
-	p{
-		text-align: center;
-		color:$item_color;
-		font-size:12px;
-		margin:0;
-    text-decoration: none;
-	}
-	img{
-	  @include border-radius($borderRadius);
-	  width: 97%;
-	  max-width: 280px; 		
-	}
-
-
-}//end homepage icon
-
-.homepage_icons_section a:hover {
-    text-decoration: none;
-}//end homepage icon hover
-
-.left {
-  text-align: left; }
-
-.mid {
-  margin: 0 auto;
-  text-align: center }
-
-.right {
-  text-align: right; 
-  float:right}
-
-/* Small devices (phones, 480px and up) bc bootstraps breakpoints are a joke */
-
-@media (max-width: 480px) {
-	.main_image_area{display: none;}
-	.container{width:96% !important; margin-top:2px;}
-	.homepage_icon{width:100%}
-	.left {text-align: center; }
-	.mid {margin: 0 auto; text-align: center }
-	.right {text-align: center; }
-	.homepage_icon p{font-size: 12px!important;}   
+@media (min-width: 480px) {
   .below_nav{
     @include belowNav($belowNavAdjust);
   }
-
 }
-
-
 @media (max-width: 767px) {
-	.container{width:96% !important; margin-top:2px;}
-	.homepage_icon p{font-size: 11px;}  
-  .webnam_header_overflow_hack{
-    margin:0;
-    padding:0;
-    max-width: 96%;
-    overflow: hidden;
-   }
   .below_nav{
     @include belowNav($belowNavAdjust);
   }  
-
 }
-
-/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .homepage_icon p{font-size: 12px;}
-  .webnam_nav_shift {
-    margin: 10px 0 0 32px; }
-
-  .navbar li a {
-    padding: 4px 10px; }
-
-  .webnam_nav_collapse {
-    margin: 0 0 0 0; }
-
-  .webnam_header {
-    margin: 10px 0 2px 0; } 
-
-  .webnam_header_overflow_hack{
-    margin:0;
-    padding:0;
-    max-width: 750px;
-    overflow: hidden;
-  } 
   .below_nav{
     @include belowNav($belowNavMidAdjust);
-  }  
-
+  } 
 }
-/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .webnam_nav_shift {
-    margin: 12px 0 0 32px; }
-
-  .navbar li a {
-    padding: 4px 20px; }
-
-  .webnam_logo img {
-    width: 244px;
-    height: 62px; }
-
-  .webnam_header {
-    margin: 10px 0 20px 0; } 
-  .webnam_header_overflow_hack{
-    margin:0;
-    padding:0;
-    max-width: 868px;
-    overflow: hidden;
-   
+  .below_nav{
+    @include belowNav($belowNavWideAdjust);
   }
-.below_nav{
-  @include belowNav($belowNavWideAdjust);
 }
-}
-/* Large devices (large desktops, 1200px and up) */
+
 

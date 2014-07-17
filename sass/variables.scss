@@ -1,0 +1,10 @@
+$item_color:#999999;
+$borderRadius:6px;
+$belowNavWideAdjust:80px;
+$belowNavMidAdjust:70px;
+$belowNavAdjust:54px;
+$brenda:10000000000000000px;
+
+@mixin belowNav($marginAdjust){
+  margin-top:$marginAdjust !important;
+}
